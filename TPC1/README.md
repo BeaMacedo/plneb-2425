@@ -1,5 +1,7 @@
 # TPC1 
 
+Nesta pasta encontra-se o ficheiro TPC1.py, que implementa várias funções que envolvem a manipulação de strings. Sseguidamente, apresenta-se as funcionalidades desenvolvidas, juntamente com exemplos de uso.
+
 ## 1. `reverse()`
 **Descrição:**  
 Esta função recebe uma string e retorna a string invertida.
