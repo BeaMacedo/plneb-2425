@@ -1,4 +1,4 @@
-# TPC1 - Expressões Regulares
+# TPC2 - Expressões Regulares
 
 Nesta pasta, encontra-se o ficheiro `Ficha_RE_1.ipynb`, que implementa diversas funções relacionadas com expressões regulares. Seguidamente estão descritas as funcionalidades desenvolvidas, acompanhadas de exemplos de uso.
 
