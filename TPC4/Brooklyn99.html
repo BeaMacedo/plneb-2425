@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">   <!-- Para caracteres especiais serem exibidos corretamente-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  <!-- Para a página aparecer nas dimensões certas em telemóvel/tablets -->
+    <title>Brooklyn Nine-Nine</title>  
+    <style>     /* Aqui definimos o estilo visual da página com CSS */
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            background-color:rgb(241, 238, 244);
+            color: #0e0422; 
+            margin: 0;      
+            padding: 0;
+            text-align: center;
+        }
+        .header {
+            width: 100%;    
+            height: 400px;  /*É a altura do cabeçalho*/
+            background: url('https://wallpapercave.com/wp/wp2473250.jpg') no-repeat center center/cover; 
+            display: flex;   /*facilita a distribuição e o alinhamento de itens dentro do contêiner.*/
+            align-items: center;    /*alinha verticalmente ao centro*/
+            justify-content: center;    /*alinha horizontalmente ao centro*/
+            color: rgb(238, 236, 240);
+            flex-direction: column; /*Para organizar os itens*/
+        }
+        .header h1 {
+            font-size: 3.5rem;
+            margin: 0;
+            border-bottom: 2px solid rgb(238, 235, 241); /* Adiciona a linha por baixo do titulo h1 */
+            padding-bottom: 15px; /* Adiciona espaço em baixo do título */
+        }
+        .header p {
+            font-size: 1.1rem;
+            width: 75%;
+            padding-top: 10px; /* Adiciona espaço depois da linha*/
+            font-weight: bold; /* Texto a negrito */
+            color:rgb(245, 245, 253);
+            text-shadow: 2px 2px 5px rgb(0, 0, 0);
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;    /* Faz os itens mudarem de linha se não couberem */
+            justify-content: center;
+            max-width: 1200px;  /* Limite maximo de largura, no fundo define quantas personagens cabem na horizontal*/
+            margin: auto;   /*Centraliza o container*/
+            padding: 20px;  /* Adiciona espaçamento interno */
+            background-color:rgb(241, 238, 244);
+        }
+        .personagem {
+            width: 300px;
+            background: #ffffff; 
+            margin: 15px;
+            padding: 15px;
+            border-radius: 8px; /*bordas arredondadas*/
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .personagem img {
+            width: 300px;
+            height: 300px;
+            margin-bottom: 10px; /*espaço entre imagem e texto*/
+        }
+    </style>
+</head>
+<body>   <!-- Aqui definimos o conteúdo visível da página-->
+    <div class="header">
+        <h1>Brooklyn Nine-Nine</h1>
+        <p>É uma série de comédia policial americana. A série gira em torno de Jake Peralta, um detetive da polícia de Nova York da 99º Esquadra de Brooklyn, que muitas vezes entra em conflito com o seu capitão Raymond Holt. O restante do elenco inclui Rosa Diaz, Terry Jeffords, Amy Santiago, Charles Boyle, Gina Linetti, Michael Hitchcock e Norm Scully. </p>
+        
+    </div>
+
+
+    <div class="container">
+        <div class="personagem">
+            <img src="https://i.pinimg.com/474x/55/e9/c3/55e9c3e2331fdf69059e87e6455a2980.jpg" alt="Jake Peralta">
+            <h2>Jake Peralta</h2>
+            <p>Interpretado por Andy Samberg. É o detetive mais talentoso e o mais infantil da 99. Apaixonado por mistérios, más piadas e pela detetive Santiago.</p>
+        </div>
+        
+        <div class="personagem">
+            <img src="https://i.pinimg.com/736x/c2/65/a6/c265a61791d718de6d2990f577f0dbca.jpg" alt="Amy Santiago">
+            <h2>Amy Santiago</h2>
+            <p>Interpretado por Melissa Fumero. É a rainha da organização, nerd dos regulamentos e obcecada por dossiês. O maior pesadelo? Chegar atrasada.</p>
+        </div>
+        
+        <div class="personagem">
+            <img src="https://i.pinimg.com/474x/c7/81/c1/c781c1ab0df7e8e5bf38ba95652d77f7.jpg" alt="Capitão Holt">
+            <h2>Capitão Holt</h2>
+            <p>Interpretado por Andre Braugher. É o chefe mais sério e robótico da polícia de Nova Iorque. Faz uma piada a cada década.</p>
+        </div>
+        
+        <div class="personagem">
+            <img src="https://i.pinimg.com/474x/49/0f/e0/490fe0ceeb19fa0832d0203863302102.jpg" alt="Gina Linetti">
+            <h2>Gina Linetti</h2>
+            <p>Interpretado por Chelsea Perett. Técnica administrativa e profissional em dar respostas sarcásticas.  É a deusa da 99.</p>
+        </div>
+        
+        <div class="personagem">
+            <img src="https://i.pinimg.com/474x/82/77/16/827716bac369f914cadaf7560c0b29b6.jpg" alt="Rosa Diaz">
+            <h2>Rosa Diaz</h2>
+            <p>Interpretado por Stephanie Beatriz. É misteriosa, intimidante e capaz de fazer um criminoso confessar só com um olhar.</p>
+        </div>
+        
+        <div class="personagem">
+            <img src="https://i.pinimg.com/474x/fa/75/49/fa7549998a3003b4908d82ce6b368eaf.jpg" alt="Charles Boyle">
+            <h2>Charles Boyle</h2>
+            <p>Interpretado por Joe Lo Truglio. É o maior fã (e stalker) de Jake, é especialista em gastronomia e em ser humilhado sem perceber.</p>
+        </div>
+        
+        <div class="personagem">
+            <img src="https://i.pinimg.com/474x/c8/71/90/c87190e65c06d286bc7c7c7a6ca41d0d.jpg" alt="Sargento Terry Jeffords">
+            <h2>Sargento Terry Jeffords</h2>
+            <p>Interpretado por Terry Crews. É um gigante musculoso com um coração de ouro. Adora iogurte grego e evitar problemas.</p>
+        </div>
+        
+        <div class="personagem">
+            <img src="https://i.pinimg.com/474x/62/49/94/62499406f753bf2b14e12d1519188856.jpg" alt="Hitchcock & Scully">
+            <h2>Hitchcock & Scully</h2>
+            <p>Interpretado por Dirk Blocker e Joel McKinnon Miller, respetivamente. São os reis da preguiça e da comida gordurosa. Já foram detetives brilhantes… há 30 anos. São inseparáveis.</p>
+        </div>
+    </div>
+</body>
+</html>
