@@ -3,7 +3,7 @@ Nesta pasta, encontra-se o ficheiro 'Brooklyn99.html' desenvolvido para a criaç
 
 ## Tecnologias utilizadas
 - HTML5 para estruturar o conteúdo da página.
-- CSS3 para a estilização, incluindo layout, cores e responsividade.
+- CSS3 para a estética, incluindo layout, cores e responsividade.
 
 ## Funcionalidades da página
 - Um cabeçalho com imagem de fundo e o título da série.
