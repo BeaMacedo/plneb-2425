@@ -28,7 +28,7 @@ Na página conceitos.html, cada designação é apresentada como um link que, ao
     </ul>
 ```
 
-### /conceitos/<designacao>
+### /conceitos/\<designacao\>
 Esta rota exibe a descrição da designação de um conceito que foi selecionado, isto é quando o utilizador seleciona um dos links da página conceitos.html é redirecionado para esta rota. A aplicação retorna a descrição correspondente à designação selecionada e a apresenta-a na página conceito_descricao.html.
 
 ```python
