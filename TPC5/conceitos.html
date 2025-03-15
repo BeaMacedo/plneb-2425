@@ -1,0 +1,45 @@
+{% extends 'layout.html' %}
+
+{% block head %}        
+    <title>{{ title }}</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #250204;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            margin: 10px 0;
+        }
+
+        a {
+            text-decoration: none;
+            color: #320a14;
+            font-size: 18px;
+        }
+
+    </style>
+{% endblock %}
+
+{% block body %}
+    <h1>Lista de Conceitos</h1>
+    <ul>
+        {% for conceito in designacoes %}
+            <li>
+                <a href="{{ url_for('conceito_descricao', designacao=conceito) }}">{{ conceito }}</a>
+            </li>
+        {% endfor %}
+    </ul>
+{% endblock %}
