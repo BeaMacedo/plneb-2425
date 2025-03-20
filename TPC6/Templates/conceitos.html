@@ -1,0 +1,34 @@
+{% extends 'layout.html' %}
+
+{% block head %}        
+    <title>{{ title }}</title>
+
+{% endblock %}
+
+{% block body %}
+
+<!-- Com este formulario temos um input para cada campo e depois temos que ter a certeza que o campo tem que ser acedido pelo servidor-->
+<form action="/conceitos" method = POST>
+    <div class="mb-3">
+      <label for="designacao_input" class="form-label">Designação</label>
+      <input type="text" class="form-control" id="designacao_input" name = "designacao">    <!-- Colocamos estes dois names para o servidor conseguir fazer a identificação-->
+    </div>
+    <div class="mb-3">
+      <label for="descricao_input" class="form-label">Descrição</label>
+      <input type="text" class="form-control" id="descricao_input" name = "descricao">
+    </div>  
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+
+
+<div class="list-group">
+    <ul>
+        {% for conceito in designacoes %}
+            
+                <a href="{{ url_for('conceito_descricao', designacao=conceito) }}" class="list-group-item list-group-item-action">{{ conceito }}</a>
+            
+        {% endfor %}
+    </ul>
+
+</div>
+{% endblock %}

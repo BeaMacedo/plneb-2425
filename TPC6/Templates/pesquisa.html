@@ -1,0 +1,45 @@
+{% extends 'layout.html' %}
+
+{% block head %}
+<title>Pesquisar</title>
+{% endblock %}
+
+
+{% block body %}
+
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-8"> 
+            <form action="/pesquisar" method="POST">
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" name="termo" placeholder="Insira a palavra a procurar" aria-label="Insira a palavra a procurar">
+                        <button class="btn btn-success" type="submit">Pesquisar</button>
+                    </div>
+                    <div class="mb-4 form-check"> 
+                        <input class="form-check-input" type="checkbox" name="pesquisa_exata" id="pesquisa_exata" checked>
+                        <label class="form-check-label" for="pesquisa_exata">
+                            Pesquisa da palavra exata
+                        </label>
+                    </div>
+            </form>
+
+            <div class="list-group">
+                {% if resultado_pesquisa %}
+                    <ul class="list-group">
+                        {% for designacao, descricao in resultado_pesquisa.items() %}
+                            <li class="list-group-item"><strong>{{ designacao|safe }}</strong>: {{ descricao|safe }}</li>
+                        {% endfor %}
+                    </ul>
+                {% else %}
+                    {% if termo_pesquisa %}
+                        <p>Nenhum resultado encontrado para "<strong>{{ termo_pesquisa }}</strong>".</p>
+                    {% endif %}
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
+
+
