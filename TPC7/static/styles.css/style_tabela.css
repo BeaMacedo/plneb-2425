@@ -1,0 +1,57 @@
+/* Para ajustar a largura da tabela para ocupar todo o espaço disponível */
+#tabela_conceitos {
+    width: 100%;
+}
+
+/* Para estilizar o cabeçalho da tabela */
+#tabela_conceitos thead {
+    background-color: #212529; 
+    color: white;
+}
+
+/* Para adicionar bordas arredondadas e espaçamento */
+#tabela_conceitos thead th {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 2px solid #dee2e6;
+}
+
+/* Para existir alternação de cores nas linhas */
+#tabela_conceitos tbody tr:nth-child(odd) {
+    background-color: #f8f9fa; 
+}
+
+#tabela_conceitos tbody tr:nth-child(even) {
+    background-color: #e9ecef; 
+}
+
+/* Para estilizar as células */
+#tabela_conceitos td {
+    padding: 10px;
+    border-bottom: 1px solid #dee2e6;
+}
+
+/* Para destacar a linha ao passar o rato do pc na mesma */
+#tabela_conceitos tbody tr:hover {
+    background-color: #adb5bd;
+    color: white;
+}
+
+/* Para estilizar a caixa de pesquisa do DataTables */
+.dataTables_filter input {
+    border: 2px solid #6c757d; 
+    border-radius: 5px;
+    padding: 5px;
+}
+
+/* Para estilizar os números das páginas */
+.dataTables_paginate .paginate_button {
+    background-color: #212529 !important;
+    color: white !important;
+    border-radius: 5px;
+    margin: 2px;
+}
+
+.dataTables_paginate .paginate_button:hover {
+    background-color: #495057 !important; 
+}

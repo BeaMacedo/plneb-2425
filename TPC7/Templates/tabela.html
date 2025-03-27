@@ -1,0 +1,31 @@
+{% extends 'layout.html' %}
+
+{% block head %}
+    <title>Tabela Conceitos</title>
+{% endblock %}
+
+
+{% block body %}
+<link rel="stylesheet" href="/static/styles.css/style_tabela.css">
+    <div class="container mt-5">
+    <table id="tabela_conceitos" class="cell-border compact stripe">
+        <thead>
+            <tr>
+                <th>Designacão</th>
+                <th>Descrição</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                {%for designacao, descricao in conceitos%}
+                <td>{{designacao}} </td>
+                <td>{{descricao}}</td>
+            </tr>
+            {% endfor %}
+
+        </tbody>
+    </table>
+    </div>
+</div>
+
+{% endblock %}
